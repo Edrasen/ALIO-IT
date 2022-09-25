@@ -1,0 +1,24 @@
+{
+    "name": "tests",
+    "version": "1.0.0",
+    "description": "Automated Testing for NINJA page with testcafe",
+    "main": "index.js",
+    "scripts": {
+        "test:chrome": "testcafe chrome ./tests/createDevice.test.js",
+        "test:chrome:headless": "testcafe chrome:headless ./tests",
+        "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
+        "test:edge": "testcafe edge ./tests"
+    },
+    "keywords": [
+        "TestCafe",
+        "Testin",
+        "Automation"
+    ],
+    "author": "Alain Ramos",
+    "license": "ISC",
+    "dependencies": {
+        "node-fetch": "^3.2.10",
+        "prettier": "^2.7.1",
+        "testcafe": "^2.0.0"
+    }
+}
